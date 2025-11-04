@@ -1,0 +1,255 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background: white;
+            padding: 15px;
+            line-height: 1.0;
+            }
+            h2 {
+            color: black;
+            padding: 10px;
+            border-radius: 4px;
+            }
+            .container {
+            display: flex;
+            border: 5px solid black;
+            padding: 10px;
+            margin-bottom: 30px;
+            background: lightslategray;
+            min-height: 100px;
+            }
+            .item {
+            background: green;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 4px;
+            }
+
+            .item:nth-child(2) { background: red; }
+            .item:nth-child(3) { background: blue; }
+            .item:nth-child(4) { background: green; }
+        </style>
+    </head>
+    <body>
+        <h2>flex-direction</h2>
+        <p>Domyślny:<b>row</b></p>
+
+    <p><b>row</b></p>
+    <div class="container" style="flex-direction: row;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>row-reverse</b></p>
+    <div class="container" style="flex-direction: row-reverse;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>column</b></p>
+    <div class="container" style="flex-direction: column; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>column-reverse</b></p>
+    <div class="container" style="flex-direction: column-reverse; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>flex-wrap</h2>
+    <p>Domyślny:<b>nowrap</b></p>
+
+    <p><b>nowrap domyślny</b></p>
+    <div class="container" style="flex-wrap: nowrap;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <p><b>wrap</b></p>
+    <div class="container" style="flex-wrap: wrap;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <p><b>wrap-reverse</b></p>
+    <div class="container" style="flex-wrap: wrap-reverse;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h2>justify-content</h2>
+    <p>Domyślny: <b>flex-start</b></p>
+
+    <p><b>center</b></p>
+    <div class="container" style="justify-content: center;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>flex-start domyślny</b></p>
+        <div class="container" style="justify-content: flex-start;">
+  <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    </div>
+
+    <p><b>flex-end</b></p>
+    <div class="container" style="justify-content: flex-end;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>space-around</b></p>
+    <div class="container" style="justify-content: space-around;">
+        <div class="item">1</div> 
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>space-between</b></p>
+    <div class="container" style="justify-content: space-between;">
+  <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    </div>
+
+    <p><b>space-evenly</b></p>
+    <div class="container" style="justify-content: space-evenly;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2> align-items</h2>
+    <p>Domyślny: stretch</p>
+
+    <p><b>center</b></p>
+    <div class="container" style="align-items: center; height: 150px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>flex-start</b></p>
+    <div class="container" style="align-items: flex-start; height: 150px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>flex-end</b></p>
+    <div class="container" style="align-items: flex-end; height: 150px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p><b>stretch domyślny</b></p>
+    <div class="container" style="align-items: stretch; height: 150px;">
+        <div class="item" style="height:auto;">1</div>
+        <div class="item" style="height:auto;">2</div>
+        <div class="item" style="height:auto;">3</div>
+    </div>
+
+    <p><b>baseline</b></p>
+    <div class="container" style="align-items: baseline; height: 150px;">
+        <div class="item" style="font-size:12px;">1</div>
+        <div class="item" style="font-size:24px;">2</div>
+        <div class="item" style="font-size:16px;">3</div>
+    </div>
+
+    <h2>align-content</h2>
+    <p>Domyślny: stretch</p>
+
+    <p><b>center</b></p>
+    <div class="container" style="flex-wrap: wrap; align-content: center; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <p>stretch domyślny</p>
+    <div class="container" style="flex-wrap: wrap; align-content: stretch; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container" style="flex-wrap: wrap; align-content: flex-start; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container" style="flex-wrap: wrap; align-content: flex-end; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container" style="flex-wrap: wrap; align-content: space-around; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container" style="flex-wrap: wrap; align-content: space-between; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <p>space-evenly</p>
+    <div class="container" style="flex-wrap: wrap; align-content: space-evenly; height: 250px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
